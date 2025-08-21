@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "coffee-4ef69"
+  },
+  "targets": {
+    "coffee-4ef69": {
+      "hosting": {
+        "aromiscafe": [
+          "aromiscafe"
+        ],
+        "aromiscafe2": [
+          "aromiscafe2"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

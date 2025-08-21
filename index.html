@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+
+    <link rel="stylesheet" href="style2.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>        <!--https://boxicons.com/ -->
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-storage-compat.js"></script>
+
+    <!-- Firebase Auth -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/10.13.1/firebase-auth-compat.min.js"
+        integrity="sha512-b2PGOE6ClpdFR5WZylPqJ9NEtHyGtdXKIe5wI0qRKVg3VeH9Km8CvihpnySwf6v21TV2cMTUp/BuglUiFLB38Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <title>Login & Register Aromis Café</title>
+</head>
+
+<body>
+    <script>
+        let userSession = JSON.parse(localStorage.getItem("user_session"))
+    </script>
+    <script src="./source/checksession.js"></script>
+    <script>checkSession();</script>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <img class="logo" src="./pic/download.png" alt="coffee-logo">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icons"><i class='bx'><img class="img-icon" src="https://img.icons8.com/fluency/96/google-logo.png" alt="google-logo"></i></a>
+                    <a href="#" class="icons"><i class='bx'><img class="img-icon" src="https://img.icons8.com/color/96/facebook-new.png" alt="facebook-logo"></i></a>
+                    <a href="#" class="icons"><i class='bx'><img class="img-icon" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github-logo"></i></a>
+                    <a href="#" class="icons"><i class='bx'><img class="img-icon" src="https://img.icons8.com/color/96/microsoft.png" alt="microsoft-logo"></i></a>
+                </div>
+                <span>Register with E-mail</span>
+                <input id="Username-signUp" type="text" placeholder="Username">
+                <input id="email-signUp" type="email" placeholder="Enter E-mail">
+                <div class="omg">
+                    <input id="pass-signUp" type="password" placeholder="Enter Password">
+                    <button type="button" class="toggle-password">🙈</button>
+                </div>
+                <div class="omg">
+                    <input id="confirm-pass-signUp" type="password" placeholder="Confirm Password">
+                    <button type="button" class="toggle-password">🙈</button>
+                </div>
+                <button id="Sign-up" onclick="SignUpUser(event)">Sign Up</button>
+                <p class="mobile-switch">Already have an account? <a href="#" id="mobile-login-link">Sign In</a></p>
+            </form>
+        </div>
+
+
+        <div class="form-container sign-in">
+            <form>
+                <img class="logo" src="./pic/download.png" alt="coffee-logo">
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icons"><i class='bx'><img class="img-icon" src="https://img.icons8.com/fluency/96/google-logo.png" alt="google-logo"></i></a>
+                    <a href="#" class="icons"><i class='bx'><img class="img-icon" src="https://img.icons8.com/color/96/facebook-new.png" alt="facebook-logo"></i></a>
+                    <a href="#" class="icons"><i class='bx'><img class="img-icon" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github-logo"></i></a>
+                    <a href="#" class="icons"><i class='bx'><img class="img-icon" src="https://img.icons8.com/color/96/microsoft.png" alt="microsoft-logo"></i></a>
+                </div>
+                <span>Login With Email & Password</span>
+                <input id="email-login" type="text" placeholder="Enter E-mail">
+                <div class="omg">
+                    <input id="pass-login" type="password" placeholder="Enter Password">
+                    <button type="button" class="toggle-password">🙈</button>
+                </div>
+                <a href="#">Forget Password?</a>
+                <button id="Sign-in" onclick="SignInUser(event)">Sign In</button>
+                <p class="mobile-switch">Don't have an account? <a href="#" id="mobile-register-link">Sign Up</a></p>
+            </form>
+        </div>
+
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome To <br>Aromis Café</h1>
+                    <p>Sign in With ID & Passowrd</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hii News To The Aromis Café?</h1>
+                    <p>Make a new account!</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=".\source\script.js"></script>
+    <script src=".\source\firebase.js"></script>
+    <script src="dynamic-scale.js"></script>
+    <!-- <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyA_oHBujPF6bNcrw_yattUxr2H2lc90OSo",
+    authDomain: "coffee-4ef69.firebaseapp.com",
+    projectId: "coffee-4ef69",
+    storageBucket: "coffee-4ef69.firebasestorage.app",
+    messagingSenderId: "776788004091",
+    appId: "1:776788004091:web:940c26cb93bd89dabb345e",
+    measurementId: "G-WCP5PR5R1M"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script> -->
+</body>
+
+</html>

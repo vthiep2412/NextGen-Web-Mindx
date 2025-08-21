@@ -1,0 +1,565 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #333333;
+}
+
+.navbar-nav {
+    color: #fff !important;
+}
+
+.navbar-brand {
+    margin-top: -2px;
+    color: #fff;
+    text-decoration: none; /* Ensure no underline */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    padding: 6px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding-bottom: 1px;
+}
+
+.navbar-brand:hover {
+    color: #fff; /* Maintain the same color on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+    transform: scale(1.2); /* Increase font size on hover */
+    font-weight: 600; /* Make the text bold on hover */
+    border-radius: 10px;
+    background-color: #7c7b7b;
+}
+
+.nav-link {
+    margin-top: -2px;
+    color: #fff;
+    text-decoration: none; /* Ensure no underline */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    padding: 5px;
+    border-radius: 8px;
+    font-weight: 500;
+    margin-right: 10px; /* Tạo khoảng cách giữa các nút */
+}
+
+.nav-link:hover {
+    color: #fff; /* Maintain the same color on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+    transform: scale(1.2); /* Increase font size on hover */
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #7c7b7b;
+}
+
+.nav-item {
+    margin-top: 5px;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 99%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: grid;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none; /* Ensure no underline */
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    border-radius: 18px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    align-self: center;
+    justify-self: center;
+    width: 50%; /* Giảm kích thước hình ảnh xuống 50% */
+    height: auto; /* Giữ nguyên tỷ lệ hình ảnh */
+    display: block;
+    margin: 0 auto; /* Căn giữa hình ảnh */
+    border-radius: 10px;
+    transition: opacity 0.85s ease; /* Thêm hiệu ứng chuyển đổi cho opacity */
+    opacity: 1; /* Đặt opacity ban đầu */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.product-item1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: flex-end; /* Push button to the bottom */
+}
+
+.product-item2{
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: flex-end; /* Push button to the bottom */
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.product-item1 button{
+    width: 136px;
+    float: right;
+    margin-left: auto;
+    }
+
+footer {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0; /* Tăng padding để tạo không gian */
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: grid; /* Sử dụng CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* Chia footer thành 3 cột đều nhau */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 10px 20px; /* Thêm padding để tạo khoảng cách */
+}
+.footer-p{
+    margin-bottom: 0px;
+}
+.footer-item {
+    padding: 0 10px; /* Thêm padding cho mỗi mục trong footer */
+}
+
+.navbar-toggler{
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: #f4f4f4;;
+    border: none; /* Loại bỏ đường viền */
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+    border-color: transparent;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    border-color: transparent;
+    box-shadow: none;
+}
+.navbar-toggler:hover{
+    border-color: transparent;
+    box-shadow: inset 0 0 10px var(--bs-navbar-toggler-focus-width);
+}
+
+.hello {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+.attribute {
+    display: block; /* Đặt mỗi thuộc tính trên một dòng mới */
+    margin: 0px 0; /* Giảm khoảng cách giữa các thuộc tính */
+    margin-bottom: 6px;
+}
+.p-inbox{
+    margin-bottom: 6px;
+}
+
+
+.image-button {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Change cursor to pointer */
+    outline: none; /* Remove outline */
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+}
+
+.image-button:hover {
+    transform: scale(1.6); /* Increase image size on hover */
+    opacity: 0.8; /* Slightly fade the image on hover */
+}
+
+.navbar .navbar-expand-lg .navbar-light{
+    display: box;
+}
+
+#search-bar {
+    width: 100%; /* Make the search bar full width */
+    max-width: 300px; /* Set a maximum width for the search bar */
+    margin: 10px auto; /* Center the search bar */
+    transition: all 0.3s ease;
+}
+
+.collapse-search {
+    display: none; /* Initially hidden */
+    max-height: 0; /* Start with no height */
+    overflow: hidden; /* Hide overflow for animation */
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Animation for dropdown */
+    opacity: 0; /* Start hidden */
+    background-color: #333333; /* Set background color to match navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    padding: 9px;
+}
+
+.collapse-search.show {
+    display: block; /* Show the search bar */
+    max-height: 90px; /* Adjust height as needed */
+    opacity: 1; /* Fully visible */
+}
+
+.search-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the search bar */
+}
+
+.form-control {
+    transform: scale(0.96);
+    width: 99%; /* Make the search bar a bit smaller */
+    padding: 10px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 16px; /* Rounded corners */
+    background-color: #ffffff; /* White background for the input */
+}
+
+#search-results {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    max-height: 0;
+    gap: 10px; /* Space between items */
+    overflow: hidden; /* Hide overflow */
+    transition: max-height 0.6s ease; /* Transition effect */
+}
+#search-results.show {
+    overflow-y: auto;
+    max-height: 500px; /* Adjust this value based on expected content height */
+}
+
+.search-product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none; /* Ensure no underline */
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.search-product-item:hover {
+    transform: scale(1.05);
+    border-radius: 18px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.search-product-item img {
+    object-fit: cover;
+    max-height: 150px;
+    display: block;
+    margin: 0 auto; /* Căn giữa hình ảnh */
+    border-radius: 10px;
+    transition: opacity 0.85s ease; /* Thêm hiệu ứng chuyển đổi cho opacity */
+    opacity: 1; /* Đặt opacity ban đầu */
+}
+.Detail-screen-content {
+    display: grid;
+  }
+
+#detail-img{
+    text-align: left;
+    border-radius: 32px;
+    width: 135%;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.item2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: fit-content;
+}
+.item2 p{
+    margin-bottom: 0px;
+}
+.item3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+.item4{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.item4 img{
+    text-align: right;
+    float: right;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    margin-right: 25px;
+}
+
+.responsive-text1 {
+    font-size: 1.5vw; /* Adjust this value as needed */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.responsive-text2 {
+    font-size: 2.5vw; /* Adjust this value as needed */
+}
+.responsive-text25 {
+    margin-bottom: 0px;
+    font-size: 2vw; /* Adjust this value as needed */
+}
+.responsive-text3 {
+    font-size: 1.2vw; /* Adjust this value as needed */
+}
+
+@media (max-width: 768px) {
+    .responsive-text1 {
+        font-size: 2.5vw; /* Increase size for smaller screens */
+    }
+    .responsive-text2{
+        font-size: 3.5vw; /* Increase size for smaller screens */
+    }
+    .responsive-text2{
+        font-size: 3vw; /* Increase size for smaller screens */
+    }
+    .responsive-text3 {
+        font-size: 2.2vw; /* Adjust this value as needed */
+    }
+    .item4 img{
+        margin-right: 21px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .buy-button{
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 480px) {
+    .responsive-text1 {
+        font-size: 3.5vw; /* Further increase size for very small screens */
+    }
+    .responsive-text2{
+        font-size: 4vw; /* Further increase size for very small screens */
+    }
+    .responsive-text2{
+        font-size: 3.6vw; /* Increase size for smaller screens */
+    }
+    .responsive-text3 {
+        font-size: 3.2vw; /* Adjust this value as needed */
+    }
+    .item4 img{
+        margin-right: 14px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .buy-button{
+        transform: scale(0.4);
+    }
+}
+
+#detail-screen {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 10000;
+    padding: 20px;
+    border-radius: 15px; /* Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 86%;
+    opacity: 0; /* Start hidden */
+    transition: opacity 1s ease; /* Fade in/out effect */
+    max-height: 80%; /* Limit height */
+    overflow-y: auto; /* Allow scrolling if content is too tall */
+}
+
+#detail-screen.show {
+    opacity: 1; /* Fully visible */
+}
+
+#temp-screen {
+    transition: opacity 0.3s ease; /* Fade effect for temp screen */
+}
+
+#temp-screen.hide {
+    opacity: 0; /* Fade out */
+}
+
+#imageChange-thumbnails{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+#imageChange-thumbnails img{
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+
+#imageChange-thumbnails img:hover{
+    border-radius: 18px;
+    opacity: 0.65;
+}
+
+.buy-button-space{
+    display: grid;
+}
+
+.buy-button{
+    font-size: larger;
+    font-weight: bold;
+    float: left;
+    background-color: red;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 50%;
+    border: none; /* Remove default button border */
+    border-radius: 12px;
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Change cursor to pointer */
+    outline: none; /* Remove outline */
+    transition: all 0.3s ease;
+}
+
+.buy-button:hover {
+    border-radius: 16px;
+    transform: scale(120%); /* Increase image size on hover */
+    opacity: 0.7; /* Slightly fade the image on hover */
+}
+
+#cart-button{
+    margin-left: 20px;
+}
+
+#cart-main{
+    display: grid;
+}
+#sec1 {
+    grid-template-columns: 1fr;
+    grid-column-start: 1;
+    width: 60%;
+    height: auto;
+    display: grid;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px; /* Add padding to create space from the edge */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+#sec1 img{
+    width: 25%;
+    height: auto;
+    /* max-width: none;  Remove the max-width
+    width: 54.7188px;
+    height: auto; */
+    border-radius: 15px;
+    object-fit: contain;
+}
+#img-con{
+    text-align: right;
+    border-radius: 15px;
+}
+#content-sec1{
+    display: grid;
+}
+
+#content1-sec1{
+    grid-column-start: 1;
+}
+
+#content2-sec1{
+    display: flex;
+    grid-column-start: 2;
+    justify-content: flex-start;
+}
+#sec2{
+    grid-column-start: 2;
+    width: 40%;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    background-color: #e0dfdf;
+    border-radius: 15px;
+}
+
+.cart-item {
+    width: auto; /* or remove the width property entirely */
+  }
