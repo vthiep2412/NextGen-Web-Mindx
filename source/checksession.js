@@ -5,12 +5,12 @@ function checkSession() {
         if (now > userSession.expiry) {
             // Phiên đã hết hạn, xóa dữ liệu và chuyển hướng về trang đăng nhập
             localStorage.removeItem('user_session');
-            if(window.location.href != "http://127.0.0.1:5500/coffee/index.html"){
-                window.location.href = "/coffee/index.html";
+            if(window.location.href != "index.html"){
+                window.location.href = "index.html";
             }
-        } else {
+        } else { 
             console.log("Phiên còn hợp lệ");
-            if(window.location.href == "http://127.0.0.1:5500/coffee/index.html"){
+            if(window.location.href == "index.html"){
                 window.location.href = 'main.html';
             }
             syncFirebaseCartToLocal();
@@ -19,8 +19,8 @@ function checkSession() {
     } catch (error){
         // Không có phiên, chuyển hướng về trang đăng nhập
         console.error(`Không có phiên: ${error}`);
-        if(window.location.href != "http://127.0.0.1:5500/coffee/index.html"){
-            window.location.href = "/coffee/index.html";
+        if(window.location.href != "index.html"){
+            window.location.href = "index.html";
         }
     }
 }
