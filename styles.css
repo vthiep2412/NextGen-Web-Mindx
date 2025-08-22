@@ -92,6 +92,8 @@ body::-webkit-scrollbar {
     font-weight: 600;
     border-radius: 8px;
     padding-bottom: 1px;
+    margin-left: 20px;
+    margin-right: 0px;
 }
 
 .navbar-brand:hover {
@@ -111,6 +113,13 @@ body::-webkit-scrollbar {
     padding: 5px;
     border-radius: 8px;
     font-weight: 500;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#navbarNav{
     margin-right: 10px;
 }
 
@@ -274,6 +283,7 @@ footer {
 }
 
 .navbar-toggler{
+    /* display: flex; */
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
     font-size: var(--bs-navbar-toggler-font-size);
     line-height: 1;
@@ -297,7 +307,7 @@ footer {
 }
 
 .hello {
-    display: flex;
+    display: contents;
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
@@ -546,7 +556,6 @@ footer {
         
     }
     .product-item {
-        
         max-width: 450px;
     }
     .about-content, #about-us-item-2 {
@@ -617,6 +626,10 @@ footer {
     .search-product-item {
         width: 45%;
     }
+    #sort-dropbox{
+        margin-bottom: -10px !important;
+        margin-right: 15px !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -656,6 +669,9 @@ footer {
     }
     .bill-section{
         align-items: center;
+    }
+    .navbar-toggler{
+        margin-right: 20px;
     }
 }
 
@@ -1477,7 +1493,10 @@ body, html, .about-title, .about-content, .about-item, .section-title, .section-
         -2px 2px 0 black,  /* Bottom-left */
         2px 2px 0 black;
 }
-
+.dropdown{
+    width: 60%;
+    margin: auto;
+}
 .dropdown-menu.show {
     animation: fadeIn 0.3s ease-in-out;
     transition: all 0.3s ease;

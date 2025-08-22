@@ -34,7 +34,7 @@ const storage = firebase.storage();*/
 
 const firebaseConfig = {
     apiKey: "AIzaSyA_oHBujPF6bNcrw_yattUxr2H2lc90OSo",
-    authDomain: "coffee-4ef69.firebaseapp.com",
+    authDomain: "vthiep2412.github.io",
     projectId: "coffee-4ef69",
     storageBucket: "coffee-4ef69.firebasestorage.app",
     messagingSenderId: "776788004091",
