@@ -72,6 +72,8 @@ body::-webkit-scrollbar {
 
 .navbar {
     background-color: #333333;
+    z-index: 99999;
+    margin-bottom: 20px;
 }
 .navbar-toggler-icon{
     /* filter: invert(1) brightness(2); */
@@ -713,11 +715,11 @@ footer {
     font-weight: bold;
     box-shadow: 0px 0px 25px #fff;
     /* appearance: none; */
-    z-index: -1;
+    /* z-index: -1; */
 }
 #sort-dropbox:hover {
     box-shadow: 0px 0px 36px #fff;
-    padding: 3px
+    /* padding: 3px */
 }
 
 #temp-screen {
@@ -1973,7 +1975,7 @@ body, html, .about-title, .about-content, .about-item, .section-title, .section-
     font-weight: bold;
     box-shadow: 0px 0px 25px #fff;
     /* appearance: none; */
-    z-index: -1;
+    /* z-index: -1; */
 }
 #sort-dropbox:hover {
     box-shadow: 0px 0px 36px #fff;
@@ -2189,6 +2191,7 @@ body, html, .about-title, .about-content, .about-item, .section-title, .section-
     max-height: 88%;
     opacity: 0;
     transition: opacity 0.5s;
+    margin-top: 30px;
 }
 
 #detail-screen.show {
