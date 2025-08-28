@@ -145,7 +145,7 @@ function handleQuantityInput(productId, value) {
     });
 }
 
-function displayCartItems() {
+function sdisplayCartItems() {
     const cartItemsContainer = document.getElementById('sec1');
     cartItemsContainer.innerHTML = '';
     let totalPrice = 0;
