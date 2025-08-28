@@ -64,6 +64,7 @@ function AlertCart(id) {
 }
 
 function updateQuantity(productId, change) {
+    console.log('updateQuantity called with productId:', productId, 'and change:', change);
     const cartData = getCartFromLocalStorage();
     if (change > 0 && !cartData[productId]) {
         cartData[productId] = { id: productId, cnt: 0 };
