@@ -21,7 +21,7 @@ async function fetchProducts() {
     try {
         // Use local temp.json instead of remote fetch
         const response = await fetch('https://6753cdf4f3754fcea7bc806a.mockapi.io/idk/nah');
-        const products = await response.json();
+        products = await response.json();
         console.log(products);
         displayProductsByClass(products);
     } catch (error) {

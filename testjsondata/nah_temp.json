@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "name": "Meraki Espresso Machine(black)",
     "description": "TIMEMORE® Co-engineered Grinder | Commercial-Level Rotary Pump | PID Dual Boiler System | Integrated Precision Weighing Scales | Integrated Milk Temperature Sensor | Smart Auto-Mode | CoffeeSense™ Technology",
     "price": 1799,
@@ -16,7 +16,7 @@
     "Date-add": "2025/03/20 , 21:17:55"
   },
   {
-    "id": 2,
+    "id": "2",
     "name": "Meraki Espresso Machine(White)",
     "description": "TIMEMORE® Co-engineered Grinder | Commercial-Level Rotary Pump | PID Dual Boiler System | Integrated Precision Weighing Scales | Integrated Milk Temperature Sensor | Smart Auto-Mode | CoffeeSense™ Technology",
     "price": 1799,
@@ -33,7 +33,7 @@
     "Date-add": "2024/12/25 , 06:42:19"
   },
   {
-    "id": 3,
+    "id": "3",
     "name": "GRAN LATTISSIMA WHITE COFFEE MAKER",
     "description": "Dispense up to 9 milk and black coffee recipes with the push of a button",
     "price": 672,
@@ -50,7 +50,7 @@
     "Date-add": "2024/10/01 , 02:59:37"
   },
   {
-    "id": 4,
+    "id": "4",
     "name": "PIXIE TITAN COFFEE MAKER",
     "description": "Sustainable Industrial Design",
     "price": 284,
@@ -67,7 +67,7 @@
     "Date-add": "2025/03/26 , 03:46:08"
   },
   {
-    "id": 5,
+    "id": "5",
     "name": "K-Duo® Hot & Iced",
     "description": "Keurig® K-Duo® is a versatile coffee maker that lets you brew single cups or full carafes using K-Cup® pods or ground coffee. Using 72oz removable reservoir, multiple brew sizes, and digital controls for easy customization.",
     "price": 149.99,
@@ -83,7 +83,7 @@
     "Date-add": "2024/12/04 , 19:36:18"
   },
   {
-    "id": 6,
+    "id": "6",
     "name": "K-Elite®",
     "description": "Keurig® K-Elite™: A sleek, programmable coffee maker with a brushed finish, Strong Brew, and Iced coffee mode. Brew 4–12oz cups with K-Cup® pods or ground coffee. Features a 75oz reservoir and hot water on demand for soups and oatmeal.",
     "price": 149.99,
@@ -99,7 +99,7 @@
     "Date-add": "2024-10-21 , 07:50:02"
   },
   {
-    "id": 7,
+    "id": "7",
     "name": "Oracle® Jet",
     "description": "Experience barista-quality coffee at home with auto grind, dose & tamp into a 58mm portafilter. Enjoy hands-free microfoam with Auto MilQ™, optimized for dairy and plant-based milk. The touchscreen offers pre-programmed café favorites, including Cold Brew & Cold Espresso, powered by the ThermoJet® heating system for fast, energy-efficient heating.",
     "price": 1999.95,
@@ -116,7 +116,7 @@
     "Date-add": "2024-12-14 , 00:34:40"
   },
   {
-    "id": 8,
+    "id": "8",
     "name": "Barista Touch™ Impress",
     "description": "Barista Touch™ Impress: Step-by-step barista guidance with real-time feedback, precise extraction, and hands-free microfoam. Powered by the ThermoJet® heating system for fast, energy-efficient brewing.",
     "price": 1199.95,
@@ -133,7 +133,7 @@
     "Date-add": "2024-09-01 , 12:56:21"
   },
   {
-    "id": 9,
+    "id": "9",
     "name": "Barista Pro™",
     "description": "Barista Pro™: Integrated grinder, hands-free microfoam, and precise extraction. Powered by the ThermoJet® heating system for fast, energy-efficient brewing.",
     "price": 849.95,
@@ -150,7 +150,7 @@
     "Date-add": "2024-08-26 , 14:49:06"
   },
   {
-    "id": 10,
+    "id": "10",
     "name": "Barista Express™",
     "description": "Grind, extract & texture like a barista in under a minute. Enjoy freshly ground beans, precise temperature control, and manual microfoam milk texturing for rich, authentic espresso.",
     "price": 699.95,
@@ -167,7 +167,7 @@
     "Date-add": "2024-08-23 , 19:33:42"
   },
   {
-    "id": 11,
+    "id": "11",
     "name": "Barista Bambino®",
     "description": "Fast, professional-quality coffee at home with a 54mm portafilter, 18g dose, and powerful steam wand for microfoam and latte art. The ThermoJet® heating system ensures a 3-second startup.",
     "price": 299.95,
@@ -184,7 +184,7 @@
     "Date-add": "2023-10-27 , 19:44:09"
   },
   {
-    "id": 12,
+    "id": "12",
     "name": "Pro Control Jug™",
     "description": "Handleless design and heat-resistant silicone sleeve gives you full control, with a pro spout to create more precise latte art. Angled opening provides a better view when steaming milk.",
     "price": 39.95,
@@ -198,7 +198,7 @@
     "Date-add": "2023-03-15 , 10:22:11"
   },
   {
-    "id": 13,
+    "id": "13",
     "name": "Naked Portafilter™ 54mm",
     "description": "Visually diagnose and troubleshoot your extraction to achieve your perfect pour. Made from stainless steel and walnut, to provide an elegant touch to your espresso set up. Compatible with 54mm Breville espresso machines.",
     "price": 89.95,
@@ -213,7 +213,7 @@
     "Date-add": "2024-07-09 , 18:44:55"
   },
   {
-    "id": 14,
+    "id": "14",
     "name": "Distribution Duo™ 54mm",
     "description": "The 2-in-1 distribution tool helps break up clumps and evenly distribute the coffee grinds. Featuring three angled blades, it ensures a level top surface for consistent and precise tamping. Made from stainless steel and walnut, to provide an elegant touch to your espresso set up.",
     "price": 99.95,
@@ -228,7 +228,7 @@
     "Date-add": "2023-11-21 , 03:12:37"
   },
   {
-    "id": 15,
+    "id": "15",
     "name": "Force Gauge Tamper™ 54mm",
     "description": "",
     "price": 99.95,
@@ -243,7 +243,7 @@
     "Date-add": "2024-01-30 , 21:09:28"
   },
   {
-    "id": 16,
+    "id": "16",
     "name": "Keurig® Descaling Solution",
     "description": "Keurig® brewer performance matters! Descaling is an important process that removes calcium deposits, or scale, that can build up inside a brewer over time. Calcium and scale is non-toxic, but left unattended, it can hinder your brewer's performance over time. Descaling should take place every 3 to 6 months to preserve the long-term health of your brewer.",
     "price": 10.49,
@@ -256,7 +256,7 @@
     "Date-add": "2023-06-05 , 14:55:02"
   },
   {
-    "id": 17,
+    "id": "17",
     "name": "K-Cycle® At Home Recycling Bag",
     "description": "Recycling Made Simple! The K-Cycle® At Home recycling bag offers an easy solution for those in areas with limited municipal recycling options. Enjoy your favorite Keurig K-Cup® Pods, peel and empty the contents, stack the pods in the bag, and send them back!",
     "price": 7.49,
@@ -269,7 +269,7 @@
     "Date-add": "2024-03-18 , 08:27:41"
   },
   {
-    "id": 18,
+    "id": "18",
     "name": "6-Pack Keurig® Water Filter Cartridge Refills",
     "description": "Great taste starts with great water! Keep your water fresh and clean with these filter cartridges for use with your Water Filter Handle (sold separately), an easy to use, in-brewer filtration unit. For best results, replace your cartridge every 2 months or after 60 tank refills to keep your water tasting pure. Includes 6 water filter cartridges (12-month supply).",
     "price": 20.24,
@@ -282,7 +282,7 @@
     "Date-add": "2023-09-12 , 16:33:19"
   },
   {
-    "id": 19,
+    "id": "19",
     "name": "BỘ KHUÔN LÀM ĐÁ LẠNH",
     "description": "oioi",
     "price": 26,
@@ -295,7 +295,7 @@
     "Date-add": "2024-05-27 , 11:58:06"
   },
   {
-    "id": 20,
+    "id": "20",
     "name": "Costa Rica Atlas Coffee",
     "description": "Arabica was the first coffee planted in Costa Rica toward the end of the 1700s. Although widespread cultivation in the country was slow, Costa Rica eventually became the first Central American country to have a coffee industry.",
     "price": 8.5,
@@ -308,7 +308,7 @@
     "Date-add": "2023-04-17 , 09:12:34"
   },
   {
-    "id": 21,
+    "id": "21",
     "name": "Espresso Roast",
     "description": "It's a special blend of beans from Latin America and Asia/Pacific darkly roasted to produce a rich and caramelly sweetness. Because this dense, full-bodied brew has a stout taste that stands up against milk, it’s the perfect foundation for making a latte or cappuccino at home. ",
     "price": "N/A",
@@ -321,7 +321,7 @@
     "Date-add": "2024-08-03 , 15:27:19"
   },
   {
-    "id": 22,
+    "id": "22",
     "name": "KICK ASS",
     "description": "If there’s something worth doing, we think it’s worth doing great. This remarkable blend of beans is the spirit of Kicking Horse® Coffee, and a bold invitation to wake up and kick ass with us.",
     "price": 15.99,
@@ -334,7 +334,7 @@
     "Date-add": "2023-12-22 , 21:45:02"
   },
   {
-    "id": 23,
+    "id": "23",
     "name": "DECAF(Swiss Water)",
     "description": "A decaffeinated coffee should be exactly like every other one of our blends: deep, dark and delicious. And that’s what this is, a tip-top taste with a mellow finish. Enjoy!",
     "price": 15.99,

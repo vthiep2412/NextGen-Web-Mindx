@@ -554,9 +554,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .product-list {
+    /* .product-list {
         
-    }
+    } */
     .product-item {
         max-width: 450px;
     }
@@ -1158,9 +1158,6 @@ input.quantity-display::-webkit-outer-spin-button {
 
 input.quantity-display {
   -moz-appearance: textfield;
-}
-
-input.quantity-display {
   appearance: textfield;
 }
 
@@ -2288,4 +2285,4 @@ body, html, .about-title, .about-content, .about-item, .section-title, .section-
     border-radius: 3px;
 }
 
-.quantity-button {
+/* .quantity-button { */

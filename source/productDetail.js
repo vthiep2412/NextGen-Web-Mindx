@@ -67,8 +67,8 @@ async function getAverageRating(productId) {
 }
 
 async function showProductDetail(productId) {
-    const product = productDetails.find(p => p.id === productId);
-    const basicProduct = basicProducts.find(p => p.id === productId);
+    const product = productDetails.find(p => p.id == productId);
+    const basicProduct = basicProducts.find(p => p.id == productId);
 
     if (!product || !basicProduct) {
         console.error('Product not found');
@@ -719,7 +719,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 showProductDetail(Number(productId));
             }
         }); 
-    },2500)
+    },3500)
 });
 window.addEventListener("resize", function() {
     const item1 = document.querySelector('.item1');

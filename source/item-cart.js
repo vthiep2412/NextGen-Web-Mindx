@@ -145,12 +145,13 @@ function handleQuantityInput(productId, value) {
     });
 }
 
-function sdisplayCartItems() {
+function displayCartItems() {
     const cartItemsContainer = document.getElementById('sec1');
     cartItemsContainer.innerHTML = '';
     let totalPrice = 0;
 
     const cartData = getCartFromLocalStorage();
+    console.log(cartData);
 
     for (const productId in cartData) {
         const product = cartProducts.find(p => p.id == productId);

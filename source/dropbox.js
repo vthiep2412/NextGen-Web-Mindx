@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         sortBox.addEventListener('change', function() {
             sortProducts(sortBox.value);
         });
-    },2500)
+    },3500)
 });
 
 function sortProducts(sortType) {

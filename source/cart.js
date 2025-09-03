@@ -62,8 +62,12 @@ async function syncFirebaseCartToLocal() {
         if (!querySnapshot.empty) {
             const userDoc = querySnapshot.docs[0];
             const userData = userDoc.data();
-            const cart = userData.cart || {};
-            localStorage.setItem('cart', JSON.stringify(cart));
+            if (userData.cart == {}) {
+                const cart = {};
+                localStorage.setItem('cart', JSON.stringify(cart));
+            } else {
+                localStorage.setItem('cart', JSON.stringify(userData.cart));
+            }
         }
     } catch (error) {
         console.error("Error syncing cart from Firestore to localStorage:", error);

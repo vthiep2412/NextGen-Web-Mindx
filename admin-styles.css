@@ -6,7 +6,7 @@ body {
 .admin-container {
     display: flex;
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 20px auto;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -48,6 +48,8 @@ body {
 .admin-content {
     flex-grow: 1;
     padding: 40px;
+    max-height: 50rem;
+    overflow: overlay;
 }
 
 .admin-screen {
@@ -72,7 +74,8 @@ h2 {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-#edit-product-form label {
+#edit-product-form label,
+#add-product-form label {
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
@@ -80,7 +83,10 @@ h2 {
 
 #edit-product-form input[type="text"],
 #edit-product-form input[type="number"],
-#edit-product-form textarea {
+#edit-product-form textarea,
+#add-product-form input[type="text"],
+#add-product-form input[type="number"],
+#add-product-form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -89,7 +95,8 @@ h2 {
     box-sizing: border-box;
 }
 
-#edit-product-form textarea {
+#edit-product-form textarea,
+#add-product-form textarea {
     resize: vertical;
     min-height: 100px;
 }
@@ -110,24 +117,28 @@ h2 {
     font-weight: bold;
 }
 
-.form-actions button[type="submit"] {
+.form-actions button[type="submit"],
+#add-product-form .form-actions .save-btn {
     background-color: #007bff;
     color: white;
 }
 
-#cancel-edit-btn {
+#cancel-edit-btn,
+#add-product-form .form-actions .cancel-btn {
     background-color: #6c757d;
     color: white;
 }
 
 /* Edit Product Screen Layout */
-#edit-product-form .edit-columns {
+#edit-product-form .edit-columns,
+#add-product-form .edit-columns {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-#edit-product-form .edit-section {
+#edit-product-form .edit-section,
+#add-product-form .edit-section {
     flex: 1;
     padding: 20px;
     border: 1px solid #ddd;
@@ -135,7 +146,8 @@ h2 {
     background-color: #f9f9f9;
 }
 
-#edit-product-form .edit-section h3 {
+#edit-product-form .edit-section h3,
+#add-product-form .edit-section h3 {
     margin-top: 0;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
@@ -143,15 +155,17 @@ h2 {
 }
 
 /* Image Management Bar */
-#image-management-section {
-    margin-top: 20px;
+#image-management-section,
+#add-product-form .edit-section:last-child {
+    /* margin-top: 20px; */
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
 }
 
-#image-management-section h3 {
+#image-management-section h3,
+#add-product-form .edit-section:last-child h3 {
     margin-top: 0;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
@@ -210,6 +224,15 @@ h2 {
     text-align: center;
 }
 
+#add-product-form .edit-image-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
 .hidden-file-input {
     display: none;
 }
@@ -226,4 +249,42 @@ h2 {
 
 .add-image-label:hover {
     background-color: #218838;
+}
+
+.account-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* border-bottom: 1px solid #eee; */
+}
+
+.account-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.account-info {
+    flex-grow: 1;
+}
+
+.account-name {
+    font-weight: bold;
+}
+
+.account-method {
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* .account-actions button {
+    margin-left: 10px;
+} */
+.btn-primary,
+.btn-danger {
+    /* min-width: 68px; */
+    /* width: auto; */
+    /* display: inline-block; */
+    margin-bottom: 2px;
 }

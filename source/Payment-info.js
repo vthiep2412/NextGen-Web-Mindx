@@ -250,7 +250,7 @@ document.getElementById('buy-now').addEventListener('click', () => {
         showBootstrapToast(toastMessage);
     }
     else {
-        const toastMessage = `Your item will be shipped to ${address} in ꝏ of time.`;
+        const toastMessage = `Your item will be shipped to ${address} in &infin; of time.`;
         showBootstrapToast(toastMessage);
         localStorage.removeItem('cart');
         cartData = {};
